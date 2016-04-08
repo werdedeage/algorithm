@@ -5,15 +5,15 @@ import java.util.Arrays;
  * @since 2016-04-08
  * @author werdedeage
  */
-public class InsertSort {
+public class DirectInsertSort {
 	public static void main(String[] args) {
 		int[] a = {21, 2, 9, 72, 28, 90, 52, 8, 9, 3};
 		System.out.println("排序前：\n" + Arrays.toString(a));
-		insertSort(a);
+		directInsertSort(a);
 		System.out.println("排序后：\n" + Arrays.toString(a));
 	}
 
-	private static void insertSort(int[] a) {
+	private static void directInsertSort(int[] a) {
 		for (int i = 0; i < a.length; i++) {
 			int temp = a[i]; //要插入的值
 			int j;
