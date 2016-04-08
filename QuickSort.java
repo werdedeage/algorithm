@@ -6,14 +6,14 @@ import java.util.Arrays;
  * @author werdedeage
  */
 public class QuickSort {
-  public static void main(String[] args) {
+	public static void main(String[] args) {
 		int[] a = {21, 2, 9, 72, 28, 90, 52, 8, 9, 3};
 		System.out.println("排序前：\n" + Arrays.toString(a));
 		quickSort(a);
 		System.out.println("排序后：\n" + Arrays.toString(a));
 	}
-
-  	//快速排序
+	
+	//快速排序
 	private static void quickSort(int[] a) {
 		quickSortPart(a, 0, a.length-1);
 	}
