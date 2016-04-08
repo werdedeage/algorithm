@@ -14,7 +14,7 @@ public class DirectInsertSort {
 	}
 
 	private static void directInsertSort(int[] a) {
-		for (int i = 0; i < a.length; i++) {
+		for (int i = 1; i < a.length; i++) {
 			int temp = a[i]; //要插入的值
 			int j;
 			for (j = i-1; j >= 0; j--) {
